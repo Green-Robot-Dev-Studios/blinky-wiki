@@ -1,0 +1,32 @@
+{
+  "name": "steml",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "preview": "vite preview",
+    "build": "vite build",
+    "pub": "npm build && echo blinky.wiki > ./dist/CNAME && touch ./dist/.nojekyll && npx gh-pages -d dist -t true"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.17.6",
+    "katex": "^0.16.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-jsx-parser": "^2.0.0",
+    "react-mathquill": "^1.0.3",
+    "slate": "^0.103.0",
+    "slate-history": "^0.100.0",
+    "slate-react": "^0.108.0"
+  },
+  "devDependencies": {
+    "babel-preset-nano-react-app": "^0.1.0",
+    "vite": "^5.2.6"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ]
+  }
+}
